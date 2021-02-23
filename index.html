@@ -5,6 +5,8 @@
       .editor { font-family: 'Roboto Mono', monospace; font-size: 12px; outline: none; overflow-y: auto; padding-left: 48px; counter-reset: line; }
       .editor div { display: block; position: relative; white-space: pre-wrap; }
       .editor div::before { content: counter(line); counter-increment: line; position: absolute; right: calc(100% + 16px); opacity: 0.5; }
+      ifelse { color: purple;}
+      for { color: red;}
     </style>
   </head>
 
@@ -22,7 +24,11 @@
             .replace(/(\/\/.*)/g, '<em>$1</em>')
             .replace(
               /\b(if|else)(?=[^\w])/g,
-              '<strong>$1</strong>',
+              '<ifelse>$1</ifelse>',
+            )
+            .replace(
+              /\b(for)(?=[^\w])/g,
+              '<for>$1</for>',
             )
             .replace(/(".*?"|'.*?'|`.*?`)/g, '<strong><em>$1</em></strong>')
             .replace(/\b(\d+)/g, '<em><strong>$1</strong></em>');
