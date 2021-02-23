@@ -65,7 +65,7 @@
         });
 
         el.addEventListener('keyup', e => {
-          if (e.keyCode != 0x28 && e.keyCode != 0x25 && e.keyCode != 0x26 && e.keyCode != 0x27 && e.keyCode != 0x0D && e.keyCode != 0x2E) {
+          if (e.keyCode != 0x28 && e.keyCode != 0x25 && e.keyCode != 0x26 && e.keyCode != 0x27 && e.keyCode != 0x0D && e.keyCode != 0x2E && e.keyCode != 0x3C) {
             const pos = caret();
             highlight(el);
             setCaret(pos);
