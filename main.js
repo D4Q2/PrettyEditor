@@ -51,7 +51,7 @@
         };
 
         highlight(el);
-
+/*
         el.addEventListener('keydown', e => {
           if (e.which === 9) {
             const pos = caret() + tab.length;
@@ -62,7 +62,7 @@
             setCaret(pos);
             e.preventDefault();
           }
-        });
+        });*/
 
         el.addEventListener('keyup', e => {
           if (e.keyCode == 0x3C) {
