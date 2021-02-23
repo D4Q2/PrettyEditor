@@ -2,7 +2,7 @@
       const js = el => {
         for (const node of el.children) {
           const s = node.innerText
-            .replace(/(\/\/.*)/g, '<em>$1</em>')
+            //.replace(/(\/\/.*)/g, '<em>$1</em>')
             .replace(
               /\b(if|else)(?=[^\w])/g,
               '<ifelse>$1</ifelse>',
@@ -11,8 +11,8 @@
               /\b(\.length)(?=[^\w])/g,
               '<strong>$1</strong>',
             )
-            .replace(/(".*?"|'.*?'|`.*?`)/g, '<strong><em>$1</em></strong>')
-            .replace(/\b(\d+)/g, '<em><strong>$1</strong></em>');
+            //.replace(/(".*?"|'.*?'|`.*?`)/g, '<strong><em>$1</em></strong>')
+            //.replace(/\b(\d+)/g, '<em><strong>$1</strong></em>');
           node.innerHTML = s.split('\n').join('<br/>');
         }
       };
@@ -105,4 +105,3 @@ function setupTemplate() {
   var code = document.querySelector('.editor');
   code.innerHTML = textFileContent;
 }
-
