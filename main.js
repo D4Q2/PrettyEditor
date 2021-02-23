@@ -79,7 +79,7 @@
       editor(el);
       console.log("done again");
 
-function output = () {
+function output () {
       var elhtml = document.querySelector('.editor').innerHTML;
       var out = document.querySelector('.output');
       out.innerHTML = elhtml;
