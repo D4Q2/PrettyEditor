@@ -77,10 +77,9 @@
       const el = document.querySelector('.editor');
       el.focus();
       editor(el);
-      console.log("done again");
 
-function output () {
-      var code = document.querySelector('.editor').innerHTML;
+function compile(string code) {
+   var code = document.querySelector('.editor').innerHTML;
       var viewer = document.querySelector('.output');
       var trimmed = code.replaceAll("<div>", "");
       var trimmed = trimmed.replaceAll("</div>", "");
@@ -91,5 +90,22 @@ function output () {
       var trimmed = trimmed.replaceAll("<ifelse>", "");
       var trimmed = trimmed.replaceAll("</ifelse>", "");
       var trimmed = trimmed.replaceAll("<br>", "");
-      viewer.innerHTML = trimmed;
+  
+  var output = document.getElementById("code").contentWindow.document;
+  output.open();
+  output.writeln( trimmed );
+  output.close();
 }
+
+function setupTemplate() {
+  var request = new XMLHttpRequest();
+  request.open('GET', 'template.txt', false);
+  request.send();
+  var textFileContent = request.responseText; 
+  
+
+  var html = document.getElementById("html");
+  
+  html.innerHTML = textFileContent;
+}
+
