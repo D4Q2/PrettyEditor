@@ -82,6 +82,14 @@
 function output () {
       var code = document.querySelector('.editor').innerHTML;
       var viewer = document.querySelector('.output');
-      var trimmed = code.replaceAll("if", "");
+      var trimmed = code.replaceAll("<div>", "");
+      var trimmed = trimmed.replaceAll("</div>", "");
+      var trimmed = trimmed.replaceAll("<em>", "");
+      var trimmed = trimmed.replaceAll("</em>", "");
+      var trimmed = trimmed.replaceAll("<strong>", "");
+      var trimmed = trimmed.replaceAll("</strong>", "");
+      var trimmed = trimmed.replaceAll("<ifelse>", "");
+      var trimmed = trimmed.replaceAll("</ifelse>", "");
+      var trimmed = trimmed.replaceAll("<br>", "");
       viewer.innerHTML = trimmed;
 }
