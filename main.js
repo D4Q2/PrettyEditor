@@ -82,5 +82,6 @@
 function output () {
       var elhtml = document.querySelector('.editor').innerHTML;
       var out = document.querySelector('.output');
+      elhtml = elhtml.replaceAll("if", "");
       out.innerHTML = elhtml;
 }
