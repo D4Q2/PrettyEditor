@@ -4,7 +4,11 @@
           const s = node.innerText
             .replace(/(\/\/.*)/g, '<em>$1</em>')
             .replace(
-              /\b(new|if|else|do|while|switch|for|in|of|continue|break|return|typeof|function|var|const|let|\.length|\.\w+)(?=[^\w])/g,
+              /\b(if|else)(?=[^\w])/g,
+              '<ifelse>$1</ifelse>',
+            )
+            .replace(
+              /\b(\.length)(?=[^\w])/g,
               '<strong>$1</strong>',
             )
             .replace(/(".*?"|'.*?'|`.*?`)/g, '<strong><em>$1</em></strong>')
