@@ -74,3 +74,6 @@
       el.focus();
       editor(el);
       console.log("done again");
+
+out = document.querySelector('.output');
+out.innerHTML = el.innerHTML;
