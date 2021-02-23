@@ -80,8 +80,8 @@
       console.log("done again");
 
 function output () {
-      var elhtml = document.querySelector('.editor').innerHTML;
-      var out = document.querySelector('.output');
-      elhtml = elhtml.replaceAll("if", "");
-      out.innerHTML = elhtml;
+      var code = document.querySelector('.editor').innerHTML;
+      var viewer = document.querySelector('.output');
+      var trimmed = code.replaceAll("if", "");
+      viewer.innerHTML = trimmed;
 }
