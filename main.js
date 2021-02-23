@@ -65,11 +65,11 @@
         });
 
         el.addEventListener('keyup', e => {
-          if (e.keyCode >= 0x30 || e.keyCode == 0x20) {
+          //if (e.keyCode >= 0x30 || e.keyCode == 0x20) {
             const pos = caret();
             highlight(el);
             setCaret(pos);
-          }
+          //}
         });
       };
 
