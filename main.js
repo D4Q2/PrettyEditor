@@ -78,23 +78,22 @@
       el.focus();
       editor(el);
 
-function compile(string code) {
+function compile() {
    var code = document.querySelector('.editor').innerHTML;
-      var viewer = document.querySelector('.output');
-      var trimmed = code.replaceAll("<div>", "");
-      var trimmed = trimmed.replaceAll("</div>", "");
-      var trimmed = trimmed.replaceAll("<em>", "");
-      var trimmed = trimmed.replaceAll("</em>", "");
-      var trimmed = trimmed.replaceAll("<strong>", "");
-      var trimmed = trimmed.replaceAll("</strong>", "");
-      var trimmed = trimmed.replaceAll("<ifelse>", "");
-      var trimmed = trimmed.replaceAll("</ifelse>", "");
-      var trimmed = trimmed.replaceAll("<br>", "");
+   var trimmed = code.replaceAll("<div>", "");
+   var trimmed = trimmed.replaceAll("</div>", "");
+   var trimmed = trimmed.replaceAll("<em>", "");
+   var trimmed = trimmed.replaceAll("</em>", "");
+   var trimmed = trimmed.replaceAll("<strong>", "");
+   var trimmed = trimmed.replaceAll("</strong>", "");
+   var trimmed = trimmed.replaceAll("<ifelse>", "");
+   var trimmed = trimmed.replaceAll("</ifelse>", "");
+   var trimmed = trimmed.replaceAll("<br>", "");
   
-  var output = document.getElementById("code").contentWindow.document;
-  output.open();
-  output.writeln( trimmed );
-  output.close();
+   var output = document.getElementById("code").contentWindow.document;
+   output.open();
+   output.writeln( trimmed );
+   output.close();
 }
 
 function setupTemplate() {
@@ -103,9 +102,7 @@ function setupTemplate() {
   request.send();
   var textFileContent = request.responseText; 
   
-
-  var html = document.getElementById("html");
-  
-  html.innerHTML = textFileContent;
+  var code = document.querySelector('.editor');
+  code.innerHTML = textFileContent;
 }
 
