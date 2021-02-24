@@ -3,9 +3,14 @@
   <head>
     <style>
       .editor { font-family: 'Roboto Mono', monospace; font-size: 12px; outline: none; overflow-y: auto; padding-left: 48px; counter-reset: line; }
-      .editor div { display: block; position: relative; white-space: pre-wrap; }
+      .editor div { display: block; position: relative; white-space: pre-wrap; color: darkblue; }
       .editor div::before { content: counter(line); counter-increment: line; position: absolute; right: calc(100% + 16px); opacity: 0.5; }
-      ifelse { color: rgb(200, 0, 200); }
+      basewords { color: purple; }
+      comment { color: gray; }
+      inquotes { color: rgb(255, 100, 0) !important; }
+      datatype { color: rgb(0, 200, 100); }
+      number { color: blue; }
+      text { color: black; }
     </style>
   </head>
 
