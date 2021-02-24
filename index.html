@@ -44,7 +44,7 @@
             )
             .replace(/\b(\d+)/g, '<number>$1</number>')
             .replace(/\b(float|int|string)/g, '<number>$1</number>')
-            .replace(/\b(a|b|c|d|f|e|g|h|i|j|k|l|m|n|o|p|q|s|t|u|v|w|x|y|z)/g, '<text>$1</text>')
+            //.replace(/\b(a|b|c|d|f|e|g|h|i|j|k|l|m|n|o|p|q|s|t|u|v|w|x|y|z)/g, '<text>$1</text>')
           node.innerHTML = s.replaceAll('\n','<br/>');
           //node.innerHTML = s.split('\n').join('<br/>'); 
           }
