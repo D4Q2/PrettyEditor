@@ -39,14 +39,6 @@
                /\b(new|if|else|do|while|switch|for|in|continue|break|return|typeof|function|var|const|let|\.length)(?=[^\w])/g,
               '<basewords>$1</basewords>',
             )
-            .replace(
-               /\b(/*)/g,
-              '<gray>$1',
-            )
-            .replace(
-               /\b(*/)/g,
-              '$1</gray>',
-            )
             .replace(/(".*?"|'.*?'|`.*?`)/g, '<inquotes>$1</inquotes>')
             .replace(/\b(\d+)/g, '<number>$1</number>')
           node.innerHTML = s.replaceAll('\n','<br/>');
