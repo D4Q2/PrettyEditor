@@ -1,21 +1,33 @@
 // Syntax highlight for JS
       const js = el => {
         for (const node of el.children) {
-          const s = node.innerText
-            //.replace(/(\/\/.*)/g, '<em>$1</em>')
+          // it can update later
+          if (node.innerText.includes('<')) {
+              //alert(node.innerText);
+          }
+          else if (node.innerText.includes('//')) {
+              //for (let i = 0; i < str.length; i++) { 
+                //process(str[i]); 
+              //}
+          }
+          else {
+            const s = node.innerText
+            
+            .replace(/(\/\/.*)/g, '<em>$1</em>') 
             .replace(
-              /\b(if|else)(?=[^\w])/g,
-              '<ifelse>$1</ifelse>',
+               /\b(new|if|else|do|while|switch|for|in|continue|break|return|typeof|function|var|const|let|\.length)(?=[^\w])/g,
+              '<basewords>$1</basewords>',
             )
-            .replace(
-              /\b(\.length)(?=[^\w])/g,
-              '<strong>$1</strong>',
-            )
-            //.replace(/(".*?"|'.*?'|`.*?`)/g, '<strong><em>$1</em></strong>')
-            //.replace(/\b(\d+)/g, '<em><strong>$1</strong></em>');
-          node.innerHTML = s.split('\n').join('<br/>');
+            .replace(/\b(\d+)/g, '<number>$1</number>')
+            .replace(/\b(float|int|string)/g, '<datatype>$1</datatype>')
+            .replace(/(".*?"|'.*?'|`.*?`)/g, '<inquotes>$1</inquotes>')
+            //.replace(/\b(a|b|c|d|f|e|g|h|i|j|k|l|m|n|o|p|q|s|t|u|v|w|x|y|z)/g, '<text>$1</text>')
+          node.innerHTML = s.replaceAll('\n','<br/>');
+          //node.innerHTML = s.split('\n').join('<br/>'); 
+          }
         }
       };
+
 
       const editor = (el, highlight = js, tab = '    ') => {
         const caret = () => {
