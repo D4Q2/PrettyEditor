@@ -19,10 +19,10 @@
       // Syntax highlight for JS
       const js = el => {
         for (const node of el.children) {
-          const s = node.innerText
-            if (s == "<") {
+          if (node.innerText == "<") {
               return;
-            }
+          }
+          const s = node.innerText
             .replace(/(\/\/.*)/g, '<em>$1</em>')
             .replace(
               /\b(new|if|else|do|while|switch|for|in|of|continue|break|return|typeof|function|var|const|let|\.length|\.\w+)(?=[^\w])/g,
