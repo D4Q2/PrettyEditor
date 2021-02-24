@@ -26,7 +26,11 @@
               '<strong>$1</strong>',
             )
             .replace(/(".*?"|'.*?'|`.*?`)/g, '<strong><em>$1</em></strong>')
-            .replace(/\b(\d+)/g, '<em><strong>$1</strong></em>');
+            .replace(/\b(\d+)/g, '<em><strong>$1</strong></em>')
+            .replace(
+              /\b(<)(?=[^\w])/g,
+              '<strong>!</strong>',
+            )
           node.innerHTML = s.replaceAll('\n','<br/>');
           //node.innerHTML = s.split('\n').join('<br/>');
         }
