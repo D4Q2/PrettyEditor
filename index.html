@@ -27,7 +27,7 @@
             )
             .replace(/(".*?"|'.*?'|`.*?`)/g, '<strong><em>$1</em></strong>')
             .replace(/\b(\d+)/g, '<em><strong>$1</strong></em>');
-          //node.innerHTML = s.split('\n').join('<br/>');
+          node.innerHTML = s.split('\n').join('<br/>');
         }
       };
 
