@@ -15,7 +15,7 @@
       <div>}</div>
     </div>
     <script>
-      /*
+      
       // Syntax highlight for JS
       const js = el => {
         for (const node of el.children) {
@@ -27,10 +27,10 @@
             )
             .replace(/(".*?"|'.*?'|`.*?`)/g, '<strong><em>$1</em></strong>')
             .replace(/\b(\d+)/g, '<em><strong>$1</strong></em>');
-          node.innerHTML = s.split('\n').join('<br/>');
+          //node.innerHTML = s.split('\n').join('<br/>');
         }
       };
-*/
+
       const editor = (el, highlight = js, tab = '    ') => {
         const caret = () => {
           const range = window.getSelection().getRangeAt(0);
