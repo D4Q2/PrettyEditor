@@ -12,7 +12,7 @@
           }
           else {
             const s = node.innerText
-            
+            // remember to remove all of these tags below when writing to the iframe
             .replace(/(\/\/.*)/g, '<em>$1</em>') 
             .replace(
                /\b(new|if|else|do|while|switch|for|in|continue|break|return|typeof|function|var|const|let|\.length)(?=[^\w])/g,
@@ -102,8 +102,14 @@ function compile() {
    var trimmed = trimmed.replaceAll("</em>", "");
    var trimmed = trimmed.replaceAll("<strong>", "");
    var trimmed = trimmed.replaceAll("</strong>", "");
-   var trimmed = trimmed.replaceAll("<ifelse>", "");
-   var trimmed = trimmed.replaceAll("</ifelse>", "");
+   var trimmed = trimmed.replaceAll("<basewords>", "");
+   var trimmed = trimmed.replaceAll("</basewords>", "");
+   var trimmed = trimmed.replaceAll("<number>", "");
+   var trimmed = trimmed.replaceAll("</number>", "");
+   var trimmed = trimmed.replaceAll("<datatype>", "");
+   var trimmed = trimmed.replaceAll("</datatype>", ""); 
+   var trimmed = trimmed.replaceAll("<inquotes>", "");
+   var trimmed = trimmed.replaceAll("</inquotes>", "");  
    var trimmed = trimmed.replaceAll("<br>", "");
   
    var output = document.getElementById("code").contentWindow.document;
