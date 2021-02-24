@@ -8,8 +8,8 @@
       basewords { color: purple; }
       comment { color: gray; }
       inquotes { color: rgb(255, 100, 0); }
-      datatype { color: blue; }
-      number { color: lightgreen; }
+      datatype { color: rgb(0, 255, 100); }
+      number { color: blue; }
       text { color: black; }
     </style>
   </head>
@@ -36,14 +36,15 @@
           }
           else {
             const s = node.innerText
-            .replace(/(".*?"|'.*?'|`.*?`)/g, '<inquotes>$1</inquotes>')
+            
             .replace(/(\/\/.*)/g, '<em>$1</em>') 
             .replace(
                /\b(new|if|else|do|while|switch|for|in|continue|break|return|typeof|function|var|const|let|\.length)(?=[^\w])/g,
               '<basewords>$1</basewords>',
             )
             .replace(/\b(\d+)/g, '<number>$1</number>')
-            .replace(/\b(float|int|string)/g, '<number>$1</number>')
+            .replace(/\b(float|int|string)/g, '<datatype>$1</datatype>')
+            .replace(/(".*?"|'.*?'|`.*?`)/g, '<inquotes>$1</inquotes>')
             //.replace(/\b(a|b|c|d|f|e|g|h|i|j|k|l|m|n|o|p|q|s|t|u|v|w|x|y|z)/g, '<text>$1</text>')
           node.innerHTML = s.replaceAll('\n','<br/>');
           //node.innerHTML = s.split('\n').join('<br/>'); 
