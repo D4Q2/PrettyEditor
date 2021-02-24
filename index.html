@@ -5,6 +5,7 @@
       .editor { font-family: 'Roboto Mono', monospace; font-size: 12px; outline: none; overflow-y: auto; padding-left: 48px; counter-reset: line; }
       .editor div { display: block; position: relative; white-space: pre-wrap; }
       .editor div::before { content: counter(line); counter-increment: line; position: absolute; right: calc(100% + 16px); opacity: 0.5; }
+        basewords { color: purple; }
     </style>
   </head>
 
@@ -19,19 +20,23 @@
       // Syntax highlight for JS
       const js = el => {
         for (const node of el.children) {
-          if (node.innerText == "<") {
-              return;
+          // it can update later
+          if (node.innerText.includes('<')) {
+              //alert(node.innerText);
           }
-          const s = node.innerText
+          else {
+              const s = node.innerText
+              
             .replace(/(\/\/.*)/g, '<em>$1</em>')
             .replace(
-              /\b(new|if|else|do|while|switch|for|in|of|continue|break|return|typeof|function|var|const|let|\.length|\.\w+)(?=[^\w])/g,
-              '<strong>$1</strong>',
+               /\b(new|if|else|do|while|switch|for|in|continue|break|return|typeof|function|var|const|let|\.length)(?=[^\w])/g,
+              '<basewords>$1</basewords>',
             )
             .replace(/(".*?"|'.*?'|`.*?`)/g, '<strong><em>$1</em></strong>')
             .replace(/\b(\d+)/g, '<em><strong>$1</strong></em>')
           node.innerHTML = s.replaceAll('\n','<br/>');
-          //node.innerHTML = s.split('\n').join('<br/>');
+          //node.innerHTML = s.split('\n').join('<br/>'); 
+          }
         }
       };
 
