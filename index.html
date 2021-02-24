@@ -20,6 +20,9 @@
       const js = el => {
         for (const node of el.children) {
           const s = node.innerText
+            if (s == "<") {
+              return;
+            }
             .replace(/(\/\/.*)/g, '<em>$1</em>')
             .replace(
               /\b(new|if|else|do|while|switch|for|in|of|continue|break|return|typeof|function|var|const|let|\.length|\.\w+)(?=[^\w])/g,
@@ -27,10 +30,6 @@
             )
             .replace(/(".*?"|'.*?'|`.*?`)/g, '<strong><em>$1</em></strong>')
             .replace(/\b(\d+)/g, '<em><strong>$1</strong></em>')
-            .replace(
-              /\b(<)(?=[^\w])/g,
-              '!',
-            )
           node.innerHTML = s.replaceAll('\n','<br/>');
           //node.innerHTML = s.split('\n').join('<br/>');
         }
