@@ -51,8 +51,12 @@
         };
 
         highlight(el);
-/*
+
         el.addEventListener('keydown', e => {
+          if (e.keyCode == 0x3C) {
+                console.log("< pressed");
+                return false;
+          }
           if (e.which === 9) {
             const pos = caret() + tab.length;
             const range = window.getSelection().getRangeAt(0);
@@ -62,13 +66,9 @@
             setCaret(pos);
             e.preventDefault();
           }
-        });*/
+        });
 
         el.addEventListener('keyup', e => {
-          if (e.keyCode == 0x3C) {
-                console.log("< pressed");
-                return false;
-          }
           if (e.keyCode != 0x28 && e.keyCode != 0x25 && e.keyCode != 0x26 && e.keyCode != 0x27 && e.keyCode != 0x0D && e.keyCode != 0x2E) {
             const pos = caret();
             highlight(el);
