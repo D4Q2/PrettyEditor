@@ -6,6 +6,9 @@
       .editor div { display: block; position: relative; white-space: pre-wrap; }
       .editor div::before { content: counter(line); counter-increment: line; position: absolute; right: calc(100% + 16px); opacity: 0.5; }
         basewords { color: purple; }
+        gray { color: gray; }
+        inquotes { color: orange; }
+        number { color: blue; }
     </style>
   </head>
 
@@ -24,16 +27,20 @@
           if (node.innerText.includes('<')) {
               //alert(node.innerText);
           }
+          else if (node.innerText.includes('//') {
+              //for (let i = 0; i < str.length; i++) { 
+                //process(str[i]); 
+              //}
+          }
           else {
-              const s = node.innerText
-              
-            .replace(/(\/\/.*)/g, '<em>$1</em>')
+            const s = node.innerText
+            .replace(/(\/\/.*)/g, '<em>$1</em>') 
             .replace(
                /\b(new|if|else|do|while|switch|for|in|continue|break|return|typeof|function|var|const|let|\.length)(?=[^\w])/g,
               '<basewords>$1</basewords>',
             )
-            .replace(/(".*?"|'.*?'|`.*?`)/g, '<strong><em>$1</em></strong>')
-            .replace(/\b(\d+)/g, '<em><strong>$1</strong></em>')
+            .replace(/(".*?"|'.*?'|`.*?`)/g, '<inquotes>$1</inquotes>')
+            .replace(/\b(\d+)/g, '<number>$1</number>')
           node.innerHTML = s.replaceAll('\n','<br/>');
           //node.innerHTML = s.split('\n').join('<br/>'); 
           }
