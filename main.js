@@ -95,8 +95,8 @@
       editor(el);
 
 function compile() {
-   var code = document.getElementByClass('editor').innerHTML;
-   var trimmed = code.replaceAll("<div>", "");
+   var code = document.getElementsByClassName("editor");
+   var trimmed = code[0].replaceAll("<div>", "");
    var trimmed = trimmed.replaceAll("</div>", "");
    var trimmed = trimmed.replaceAll("<em>", "");
    var trimmed = trimmed.replaceAll("</em>", "");
