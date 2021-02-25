@@ -123,5 +123,5 @@ function setupTemplate() {
   var textFileContent = request.responseText; 
   
   var code = document.querySelector('.editor');
-  code.innerHTML = textFileContent;
+  code.innerText = textFileContent;
 }
