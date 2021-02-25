@@ -123,5 +123,15 @@ function setupTemplate() {
   var textFileContent = request.responseText; 
   
   var code = document.querySelector('.editor');
-  code.innerText = textFileContent;
+  code.innerText = "
+<html>
+  <head>
+    <title>New</title>
+  </head>
+  <body>
+        Your stuff here.
+  </body>
+</html>
+      
+"
 }
