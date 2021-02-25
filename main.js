@@ -114,8 +114,7 @@ function compile() {
   
    var output = document.getElementById("code").contentWindow.document;
    output.open();
-   output.empty();
-   output.writeln( trimmed );
+   output.write( trimmed );
    output.close();
 }
 
