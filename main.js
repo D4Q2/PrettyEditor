@@ -3,7 +3,7 @@
         for (const node of el.children) {
           // it can update later
           if (node.innerText.includes('<')) {
-              //alert(node.innerText);
+                
           }
           else {
             const s = node.innerText
