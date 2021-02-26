@@ -1,53 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-      body {
-                background-color: lightblue;
-      }
-
-      .editor { 
-        font-family: 'Roboto Mono', monospace; 
-        font-size: 12px;
-        text-align: left;
-        width: 40%;
-        height: 50vh;
-        float: top;
-        min-height: 250px;
-        overflow: scroll;
-        margin: auto;
-        display: inline-block;
-        background: #f4f4f9;
-        outline: none;
-        /*outline: none; overflow-y: auto; padding-left: 0px; counter-reset: line;*/ 
-        /*background-color: rgb(200, 200, 200); 
-        width: 40vw;/*grid-area: code;*/ 
-      }
-      /*.editor div { display: block; position: relative; white-space: pre-wrap; color: darkgray;  }*/
-      iframe { 
-        float: top;
-        width: 100%;
-        height: 100%;
-        outline: none;
-        border: none;
-      }
-      .background {
-        float: top;
-        width: 40%;
-        height: 50vh;
-        outline: none;
-        border: none;
-        background: #f4f4f9;
-      }
-      /*.editor div::before { content: counter(line); counter-increment: line; position: absolute; right: calc(100% + 16px); opacity: 0.5; }*/
-      button { width: 5%; }
-      basewords { color: purple; }
-      comment { color: gray; }
-      inquotes { color: rgb(255, 100, 0) !important; }
-      datatype { color: rgb(0, 200, 100); }
-      number { color: blue; }
-      text { color: black; }
-    </style>
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
