@@ -31,6 +31,14 @@
         outline: none;
         border: none;
       }
+      background {
+        float: top;
+        width: 40%;
+        height: 50vh;
+        outline: none;
+        border: none;
+        background: #f4f4f9;
+      }
       /*.editor div::before { content: counter(line); counter-increment: line; position: absolute; right: calc(100% + 16px); opacity: 0.5; }*/
       button { width: 5vw; }
       basewords { color: purple; }
@@ -52,6 +60,7 @@
       <button onclick="compile()" class="runButton">Run</button>
       <button onclick="setupTemplate()" class="tempButton">Template</button>
       <iframe id="code"></iframe>
+      <div class="background"></div>
       <script src="main.js"></script>
     </div>
   </body>
