@@ -17,8 +17,10 @@
             .replace(/\b(float|int|string|bool)/g, '<datatype>$1</datatype>')
             .replace(/(".*?"|'.*?'|`.*?`)/g, '<inquotes>$1</inquotes>');
             //.replace(/\b(a|b|c|d|f|e|g|h|i|j|k|l|m|n|o|p|q|s|t|u|v|w|x|y|z)/g, '<text>$1</text>')
-            s.replaceAll('/*','<comment>$1');
-            s.replaceAll('*/','$1</comment>');
+           
+            s = s.replaceAll('/*','<comment>$1');
+            s = s.replaceAll('*/','$1</comment>');
+                
           node.innerHTML = s.replaceAll('\n','<br/>');
           //node.innerHTML = s.split('\n').join('<br/>'); 
           }
