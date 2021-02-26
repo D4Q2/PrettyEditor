@@ -10,7 +10,7 @@
         font-family: 'Roboto Mono', monospace; 
         font-size: 12px;
         text-align: left;
-        width: 40%;
+        width: 45%;
         height: 50vh;
         float: top;
         min-height: 250px;
@@ -20,7 +20,7 @@
         background: #f4f4f9;
         outline: none;
         /*outline: none; overflow-y: auto; padding-left: 0px; counter-reset: line;*/ 
-        background-color: rgb(200, 200, 200); 
+        /*background-color: rgb(200, 200, 200); 
         width: 40vw;/*grid-area: code;*/ 
       }
       /*.editor div { display: block; position: relative; white-space: pre-wrap; color: darkgray;  }*/
@@ -31,6 +31,8 @@
         background: #f4f4f9;
         width: 40%;
         height: 50vh;
+        outline: none;
+        border: none;
       }
       /*.editor div::before { content: counter(line); counter-increment: line; position: absolute; right: calc(100% + 16px); opacity: 0.5; }*/
       button { width: 5vw; }
@@ -52,7 +54,7 @@
       </div>
       <button onclick="compile()" class="runButton">Run</button>
       <button onclick="setupTemplate()" class="tempButton">Template</button>
-      <iframe id="code"><html><head><style>body{ background-color: white; }</style></head><body></body></html></iframe>
+      <iframe id="code"></iframe>
       <script src="main.js"></script>
     </div>
   </body>
