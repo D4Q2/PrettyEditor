@@ -8,7 +8,7 @@
           else {
             var s = node.innerText
             // remember to remove all of these tags below when writing to the iframe
-            .replace(/(\/\/.*)/g, '<em>$1</em>') 
+            .replace(/(\/\/.*)/g, '<comment>$1</comment>') 
             .replace(
                /\b(new|if|else|do|while|switch|for|in|continue|break|return|typeof|function|var|const|let|\.length)(?=[^\w])/g,
               '<basewords>$1</basewords>',
