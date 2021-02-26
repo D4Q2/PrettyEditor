@@ -2,8 +2,10 @@
 <html>
   <head>
     <style>
-      body { 
-        background-color: lightblue; 
+      body {
+                background-color: lightblue;
+      }
+      .container {  
         display: grid;
         grid-template-columns: 25vw 25vw 25vw 25vw;
         grid-template-rows: auto;
@@ -30,14 +32,16 @@
   </head>
 
   <body>
-    <div class="editor" contenteditable="true" spellcheck="false">
-      <div>function example() {</div>
-      <div>  return 42;</div>
-      <div>}</div>
+    <div class="container">
+      <div class="editor" contenteditable="true" spellcheck="false">
+        <div>function example() {</div>
+        <div>  return 42;</div>
+        <div>}</div>
+      </div>
+      <button onclick="compile()" class="runButton">Run</button>
+      <button onclick="setupTemplate()" class="tempButton">Template</button>
+      <iframe id="code"><html><head><style>body{ background-color: white; }</style></head><body></body></html></iframe>
+      <script src="main.js"></script>
     </div>
-    <button onclick="compile()" class="runButton">Run</button>
-    <button onclick="setupTemplate()" class="tempButton">Template</button>
-    <iframe id="code"><html><head><style>body{ background-color: white; }</style></head><body></body></html></iframe>
-    <script src="main.js"></script>
   </body>
 </html>
