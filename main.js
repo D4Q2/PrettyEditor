@@ -6,7 +6,7 @@
                 
           }
           else {
-            const s = node.innerText
+            var s = node.innerText
             // remember to remove all of these tags below when writing to the iframe
             .replace(/(\/\/.*)/g, '<em>$1</em>') 
             .replace(
