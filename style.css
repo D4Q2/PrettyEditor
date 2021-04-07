@@ -36,16 +36,16 @@
         background: #f4f4f9;
       }
       .editorArea {
-            background-color: rgb(100, 100, 100);
-            border: 2px rgb(200, 200, 200) solid;
+            background-color: rgb(200, 200, 200);
+            border: 2px rgb(100, 100, 100) solid;
       }
       .codeEditorButton {
             background-color: rgb(0, 125, 0);
-            border: 1px rgb(255, 255, 255) solid;
+            border: 1px rgb(0, 0, 0) solid;
       }
       .activateEditorButton::hover {
-            background-color: rgb(200, 200, 200);
-            border: 10px rgb(255, 255, 255) solid;
+            background-color: rgb(0, 50, 0);
+            border: 10px rgb(0, 0, 0) solid;
       }
       /*.editor div::before { content: counter(line); counter-increment: line; position: absolute; right: calc(100% + 16px); opacity: 0.5; }*/
       button { 
