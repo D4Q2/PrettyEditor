@@ -3,6 +3,7 @@ let editorHtml = '<div class="editor" contenteditable="true" spellcheck="false">
 
 function activateEditor(name) {
   var codeAreaHtml = document.getElementById(name).innerHTML;
+  console.log(name);
   if (codeAreaHtml == '') {
       // The editor is not there, create it
       document.getElementById(name).innerHTML == editorHtml;
