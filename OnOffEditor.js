@@ -14,7 +14,7 @@ function activateEditor(var name) {
       // The editor is not there, create it
       document.getElementById(name).innerHTML == editorHtml;
   } 
-  else if (document.getElementById(name).innerHTML == editorHtml) {
+  else if (document.getElementById(name).innerHTML.contains("<button onclick="compile()" class="runButton">Run</button>")) {
       // The editor is there, remove it
       document.getElementById(name).innerHTML == "";
   }
