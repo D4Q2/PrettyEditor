@@ -10,7 +10,13 @@
     <div class="editorArea"></div>
       <button onclick='activateEditor("editorZero")' class='codeEditorButton'>Open Live Code Editor</button>
       <div class="container" id="editorZero">
-        
+        <div class="editor" contenteditable="true" spellcheck="false">
+        </div>
+        <button onclick="compile()" class="runButton">Run</button>
+        <button onclick="setupTemplate()" class="tempButton">Template</button>
+        <div class="background">
+          <iframe id="code"></iframe>
+        </div>
       </div>
       <script src="main.js"></script>
     </div>
