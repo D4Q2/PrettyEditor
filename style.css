@@ -35,6 +35,18 @@
         border: none;
         background: #f4f4f9;
       }
+      .editorArea {
+            background-color: rgb(100, 100, 100);
+            border: 10px rgb(200, 200, 200) solid;
+      }
+      .activateEditorButton {
+            background-color: rgb(100, 200, 100);
+            border: 10px rgb(255, 255, 255) solid;
+      }
+      .activateEditorButton::hover {
+            background-color: rgb(200, 200, 200);
+            border: 10px rgb(255, 255, 255) solid;
+      }
       /*.editor div::before { content: counter(line); counter-increment: line; position: absolute; right: calc(100% + 16px); opacity: 0.5; }*/
       button { 
         width: 5%; 
@@ -57,3 +69,4 @@
       text { 
         color: black; 
       }
+
