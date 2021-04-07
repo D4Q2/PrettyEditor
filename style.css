@@ -33,7 +33,7 @@
       .background {
         grid-area: display;
         /*float: right;*/
-        width: 95%;
+        width: 97%;
         height: 50vh;
         outline: none;
         display: inline-block;
@@ -62,6 +62,7 @@
         color: white;
         background-color: orange;
         height: 10%;
+        float: center;
       }
       .runButton {
         grid-area: runButton;
@@ -69,6 +70,7 @@
         color: white;
         background-color: orange;
         height: 10%;
+        float: center;
       }
       .tempButton:hover {
         grid-area: tempButton;
