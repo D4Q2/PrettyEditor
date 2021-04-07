@@ -12,7 +12,9 @@ function activateEditor(name) {
   else if (codeAreaHtml.includes('<button onclick="compile()" class="runButton">Run</button>')) {
     console.log("The editor is active, destroying it...");
     // The editor is there, remove it
-    document.getElementById(name).innerText == '';
+    const myNode = document.getElementById(name);
+    myNode.innerHTML = '';
+    //document.getElementById(name).innerHtml == '';
   }
   else {
     console.log('There is a problem with code editor area. It has an unexpected inner html.');
