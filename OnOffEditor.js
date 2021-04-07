@@ -5,12 +5,14 @@ function activateEditor(name) {
   var codeAreaHtml = document.getElementById(name).innerHTML;
   console.log(name);
   if (codeAreaHtml == '') {
-      // The editor is not there, create it
-      document.getElementById(name).innerHTML == editorHtml;
+    console.log('No editor, creating one...');
+    // The editor is not there, create it
+    document.getElementById(name).innerHTML == editorHtml;
   } 
   else if (codeAreaHtml.includes('<button onclick="compile()" class="runButton">Run</button>')) {
-      // The editor is there, remove it
-      document.getElementById(name).innerHTML == '';
+    console.log("The editor is active, destroying it...");
+    // The editor is there, remove it
+    document.getElementById(name).innerHTML == '';
   }
   else {
     console.log('There is a problem with code editor area. It has an unexpected inner html.');
