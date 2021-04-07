@@ -61,12 +61,28 @@
         width: 95%;
         color: white;
         background-color: orange;
+        height: 10%;
       }
       .runButton {
         grid-area: runButton;
         width: 95%;
         color: white;
         background-color: orange;
+        height: 10%;
+      }
+      .tempButton:hover {
+        grid-area: tempButton;
+        width: 95%;
+        color: lightgray;
+        background-color: darkorange;
+        height: 10%;
+      }
+      .runButton:hover {
+        grid-area: runButton;
+        width: 95%;
+        color: lightgray;
+        background-color: darkorange;
+        height: 10%;
       }
       basewords { 
         color: purple; 
