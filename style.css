@@ -58,35 +58,45 @@
       /*.editor div::before { content: counter(line); counter-increment: line; position: absolute; right: calc(100% + 16px); opacity: 0.5; }*/
       .tempButton {
         grid-area: tempButton;
-        width: 95%;
+        width: 100%;
         color: white;
         background-color: orange;
         height: 10%;
-        padding: 2.5%;
       }
       .runButton {
         grid-area: runButton;
-        width: 95%;
+        width: 100%;
         color: white;
         background-color: orange;
         height: 10%;
-        padding: 2.5%;
       }
       .tempButton:hover {
         grid-area: tempButton;
-        width: 95%;
+        width: 100%;
         color: lightgray;
         background-color: darkorange;
         height: 10%;
-        padding: 2.5%;
       }
       .runButton:hover {
         grid-area: runButton;
-        width: 95%;
+        width: 100%;
         color: lightgray;
         background-color: darkorange;
         height: 10%;
-        padding: 2.5%;
+      }
+      .tempButton:active {
+        grid-area: tempButton;
+        width: 100%;
+        color: lightgray;
+        background-color: rgb(200, 75, 0);
+        height: 10%;
+      }
+      .runButton:active {
+        grid-area: runButton;
+        width: 100%;
+        color: lightgray;
+        background-color: rgb(200, 75, 0);
+        height: 10%;
       }
       basewords { 
         color: purple; 
