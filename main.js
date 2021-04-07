@@ -5,7 +5,7 @@
           if (node.innerText.includes('<')) {
                 
           }
-          else {
+          //else {
             var s = node.innerText
             // remember to remove all of these tags below when writing to the iframe
             .replace(/(\/\/.*)/g, '<comment>$1</comment>') 
@@ -23,7 +23,7 @@
                 
           node.innerHTML = s.replaceAll('\n','<br/>');
           //node.innerHTML = s.split('\n').join('<br/>'); 
-          }
+          //}
         }
       };
 
@@ -64,11 +64,11 @@
         highlight(el);
 
         el.addEventListener('keydown', e => {
-          if (e.keyCode == 0x3C) {
+          //if (e.keyCode == 0x3C) {
                 console.log("< pressed");
                 return false;
-          }
-          if (e.which === 9) {
+          //}
+          //if (e.which === 9) {
             const pos = caret() + tab.length;
             const range = window.getSelection().getRangeAt(0);
             range.deleteContents();
@@ -76,15 +76,15 @@
             highlight(el);
             setCaret(pos);
             e.preventDefault();
-          }
+          //}
         });
 
         el.addEventListener('keyup', e => {
-          if (e.keyCode != 0x28 && e.keyCode != 0x25 && e.keyCode != 0x26 && e.keyCode != 0x27 && e.keyCode != 0x0D && e.keyCode != 0x2E) {
+          //if (e.keyCode != 0x28 && e.keyCode != 0x25 && e.keyCode != 0x26 && e.keyCode != 0x27 && e.keyCode != 0x0D && e.keyCode != 0x2E) {
             const pos = caret();
             highlight(el);
             setCaret(pos);
-          }
+          //}
         });
       };
 
