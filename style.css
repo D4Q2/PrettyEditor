@@ -43,12 +43,12 @@
 
       .container {
             display: grid;
-            grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+            grid-template-columns: 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw;
             grid-template-rows: auto;
             grid-template-areas: 
-                  "editor editor button display display"
-                  "editor editor button display display"
-                  "editor editor button display display";
+                  "editor editor editor editor tempButton runButton display display display display"
+                  "editor editor editor editor tempButton runButton display display display display"
+                  "editor editor editor editor tempButton runButton display display display display";
       }
       .editorArea {
             background-color: rgb(200, 200, 200);
@@ -65,7 +65,7 @@
 
       /*.editor div::before { content: counter(line); counter-increment: line; position: absolute; right: calc(100% + 16px); opacity: 0.5; }*/
       .tempButton { 
-        grid-area: button;
+        grid-area: tempButton;
         float: right;
         width: 50%;
         color: white;
@@ -73,7 +73,7 @@
         height: 10%;
       }
       .runButton { 
-        grid-area: button;
+        grid-area: runButton;
         float: left;
         width: 50%;
         color: white;
