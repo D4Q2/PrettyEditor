@@ -54,31 +54,19 @@
             background-color: rgb(200, 200, 200);
             border: 2px rgb(100, 100, 100) solid;
       }
-      .codeEditorButton {
-            background-color: rgb(0, 125, 0);
-            border: 1px rgb(0, 0, 0) solid;
-      }
-      .activateEditorButton:hover {
-            background-color: rgb(0, 50, 0);
-            border: 10px rgb(0, 0, 0) solid;
-      }
 
       /*.editor div::before { content: counter(line); counter-increment: line; position: absolute; right: calc(100% + 16px); opacity: 0.5; }*/
-      .tempButton { 
+      .tempButton {
         grid-area: tempButton;
-        float: right;
-        width: 45%;
+        width: 95%;
         color: white;
         background-color: orange;
-        height: 10%;
       }
-      .runButton { 
+      .runButton {
         grid-area: runButton;
-        float: left;
-        width: 45%;
+        width: 95%;
         color: white;
         background-color: orange;
-        height: 10%;
       }
       basewords { 
         color: purple; 
