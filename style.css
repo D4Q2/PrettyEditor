@@ -87,15 +87,29 @@
       .tempButton:active {
         grid-area: tempButton;
         width: 100%;
-        color: lightgray;
+        color: darkgray;
         background-color: rgb(200, 75, 0);
         height: 10%;
       }
       .runButton:active {
         grid-area: runButton;
         width: 100%;
-        color: lightgray;
+        color: darkgray;
         background-color: rgb(200, 75, 0);
+        height: 10%;
+      }
+      .tempButton:focus {
+        grid-area: tempButton;
+        width: 100%;
+        color: lightgray;
+        background-color: rgb(225, 125, 0);
+        height: 10%;
+      }
+      .runButton:focus {
+        grid-area: runButton;
+        width: 100%;
+        color: lightgray;
+        background-color: rgb(225, 125, 0);
         height: 10%;
       }
       basewords { 
