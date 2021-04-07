@@ -33,7 +33,7 @@
       .background {
         grid-area: display;
         /*float: right;*/
-        width: 97%;
+        width: 95.3%;
         height: 50vh;
         outline: none;
         display: inline-block;
