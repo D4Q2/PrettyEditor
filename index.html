@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Code Editor Landing Page</title>
+    <title>Landing Page</title>
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    <button onclick="activateEditor(0)" class="codeEditorButton">Open Live Code Editor</button>
-    <div class="container" id="0">
-      <div class="editor" contenteditable="true" spellcheck="false">
-        <div>function example() {</div>
-        <div>  return 42;</div>
-        <div>}</div>
+    <div class="editorarea">
+      <button onclick="activateEditor(0)" class="codeEditorButton">Open Live Code Editor</button>
+      <div class="container" id="0">
+        <div class="editor" contenteditable="true" spellcheck="false">
+          <div>function example() {</div>
+          <div>  return 42;</div>
+          <div>}</div>
+        </div>
+        <button onclick="compile()" class="runButton">Run</button>
+        <button onclick="setupTemplate()" class="tempButton">Template</button>
+        <div class="background">
+          <iframe id="code"></iframe>
+        </div>
+        <script src="main.js"></script>
       </div>
-      <button onclick="compile()" class="runButton">Run</button>
-      <button onclick="setupTemplate()" class="tempButton">Template</button>
-      <div class="background">
-        <iframe id="code"></iframe>
-      </div>
-      <script src="main.js"></script>
+      <script src="OnOffEditor.js"></script>
     </div>
-    <script src="OnOffEditor.js"></script>
   </body>
 </html>
