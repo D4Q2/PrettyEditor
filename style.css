@@ -43,7 +43,7 @@
             background-color: rgb(0, 125, 0);
             border: 1px rgb(0, 0, 0) solid;
       }
-      .activateEditorButton::hover {
+      .activateEditorButton:hover {
             background-color: rgb(0, 50, 0);
             border: 10px rgb(0, 0, 0) solid;
       }
