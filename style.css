@@ -3,6 +3,7 @@
       }
 
       .editor { 
+        grid-area: editor;
         font-family: 'Roboto Mono', monospace;
         font-size: 12px;
         text-align: left;
@@ -29,6 +30,7 @@
         border: none;
       }
       .background {
+        grid-area: display;
         float: right;
         width: 35%;
         height: 50vh;
@@ -36,6 +38,16 @@
         display: inline-block;
         border: none;
         background: #f4f4f9;
+      }
+
+      .container {
+            display: grid;
+            grid-template-columns: 50px 50px 50px 50px 50px;
+            grid-template-rows: auto;
+            grid-template-areas: 
+                  "editor editor button display display"
+                  "editor editor button display display"
+                  "editor editor button display display";
       }
       .editorArea {
             background-color: rgb(200, 200, 200);
@@ -52,6 +64,7 @@
 
       /*.editor div::before { content: counter(line); counter-increment: line; position: absolute; right: calc(100% + 16px); opacity: 0.5; }*/
       button { 
+        grid-area: button;
         float: top;
         width: 5%;
         color: white;
