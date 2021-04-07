@@ -3,7 +3,7 @@
       }
 
       .editor { 
-        font-family: 'Roboto Mono', monospace; 
+        font-family: 'Roboto Mono', monospace;
         font-size: 12px;
         text-align: left;
         width: 30%;
@@ -12,7 +12,7 @@
         min-height: 250px;
         overflow: scroll;
         margin: auto;
-        display: inline-block;
+        /*display: inline-block;*/
         background: #f4f4f9;
         outline: none;
         /*outline: none; overflow-y: auto; padding-left: 0px; counter-reset: line;*/ 
@@ -47,6 +47,7 @@
             background-color: rgb(0, 50, 0);
             border: 10px rgb(0, 0, 0) solid;
       }
+
       /*.editor div::before { content: counter(line); counter-increment: line; position: absolute; right: calc(100% + 16px); opacity: 0.5; }*/
       button { 
         width: 5%; 
