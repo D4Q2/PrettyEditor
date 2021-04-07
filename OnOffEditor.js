@@ -1,13 +1,4 @@
-let editorHtml = "
-<div class="editor" contenteditable="true" spellcheck="false">
-      </div>
-      <button onclick="compile()" class="runButton">Run</button>
-      <button onclick="setupTemplate()" class="tempButton">Template</button>
-      <div class="background">
-        <iframe id="code"></iframe>
-      </div>
-      <script src="main.js"></script>
-                                 "
+let editorHtml = '<div class="editor" contenteditable="true" spellcheck="false"></div><button onclick="compile()" class="runButton">Run</button><button onclick="setupTemplate()" class="tempButton">Template</button><div class="background"><iframe id="code"></iframe></div><script src="main.js"></script>'
                                  
 function activateEditor(var name) {
   if (document.getElementById(name).innerHTML == "") {
