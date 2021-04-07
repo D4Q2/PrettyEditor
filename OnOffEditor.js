@@ -1,11 +1,13 @@
 let editorHtml = '<div class="editor" contenteditable="true" spellcheck="false"></div><button onclick="compile()" class="runButton">Run</button><button onclick="setupTemplate()" class="tempButton">Template</button><div class="background"><iframe id="code"></iframe></div><script src="main.js"></script>'
-                                 
+ 
+
 function activateEditor(name) {
-  if (document.getElementById(name).innerHTML == '') {
+  var codeAreaHtml = document.getElementById(name).innerHTML;
+  if (codeAreaHtml == '') {
       // The editor is not there, create it
       document.getElementById(name).innerHTML == editorHtml;
   } 
-  else if (document.getElementById(name).innerHTML.contains('<button onclick="compile()" class="runButton">Run</button>')) {
+  else if (codeAreaHtml.contains('<button onclick="compile()" class="runButton">Run</button>')) {
       // The editor is there, remove it
       document.getElementById(name).innerHTML == '';
   }
