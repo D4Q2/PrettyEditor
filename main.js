@@ -111,6 +111,8 @@ function compile() {
    var trimmed = trimmed.replaceAll("</inquotes>", "");  
    var trimmed = trimmed.replaceAll("<br>", "");
    var trimmed = trimmed.replaceAll("&nbsp;", "");
+   var trimmed = trimmed.replaceAll("&lt;", "<");
+   var trimmed = trimmed.replaceAll("&gt;", ">");
   
    var output = document.getElementById("code").contentWindow.document;
    output.open();
