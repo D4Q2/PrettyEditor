@@ -125,6 +125,6 @@ function setupTemplate() {
   //var textFileContent = request.responseText; 
   
   var code = document.querySelector('.editor');
-  document.getElementById('log').innerText = "<html><head><title>New</title></head><body>Your stuff here.</body></html>"; 
+  document.getElementById('log').innerHTML = "<html><head><title>New</title></head><body>Your stuff here.</body></html>"; 
   code.value = "<html><head><title>New</title></head><body>Your stuff here.</body></html>";
 }
