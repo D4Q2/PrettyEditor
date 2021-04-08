@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Div Tag</title>
+    <link rel="stylesheet" href="../style.css">
+  </head>
 
+  <body>
+    <div class="title">
+      <h1>Anyone can Code</h1>
+      <button class="menuButton" onclick="document.location='4PandB.html'">Last Lesson</button>
+      <button class="menuButton" onclick="document.location='../index.html'">Home</button>
+      <button class="menuButton" onclick="document.location='6Emphasis.html'">Next Lesson</button>
+    </div>
+    <div class="about">
+      Some more useful tags to adjust what your words look like are these: &lt;b&gt;and &lt;/b&gt;, &lt;i&gt;and &lt;/i&gt;, &lt;u&gt;and &lt;/u&gt;, and &lt;s&gt;and &lt;/s&gt;. Have a look at what each of these tags does below:
+    </div>
+    <!-- An editor setup -->
+    <div class="editorArea">
+      <!-- The container that manages the positions of the elements -->
+      <div class="container" id="editorZero">
+        <!-- Where the user can type code to be run -->
+        <div class="editor" contenteditable="true" spellcheck="false">
+          &lt;!DOCTYPE html&gt;<br>
+          &lt;html&gt;<br>
+            &lt;head&gt;<br>
+              <br>
+            &lt;/head&gt;<br>
+            &lt;body&gt;<br>
+            &nbsp;&nbsp;&lt;b&gt; Bold, &lt;/b&gt;
+            &nbsp;&nbsp;&lt;i&gt; Italic &lt;/i&gt;
+            &nbsp;&nbsp;&lt;u&gt; Underlined &lt;/u&gt;
+            &nbsp;&nbsp;&lt;s&gt; Strikethrough &lt;/s&gt;
+            &nbsp;&nbsp;&lt;b&gt;&lt;u&gt; You can use multiple too! &lt;/b&gt;&lt;/u&gt;
+            &lt;/body&gt;<br>
+          &lt;/html&gt;<br>
+        </div>
+        <!-- The button that copies the code to the display part to run it -->
+        <button onclick="compile()" class="runButton">Run</button>
+        <!-- Resets the code in the editor area to the basic template -->
+        <button onclick="setupTemplate()" class="tempButton">Template</button>
+        <!-- The background of the display area -->
+        <div class="background">
+          <!-- The area where the code output is be displayed -->
+          <iframe id="code"></iframe>
+        </div>
+      </div>
+      <!-- Include the main script that manages syntax highlighting and code output display -->
+      <script src="../main.js"></script>
+    </div>
+  </body>
+</html>
+<!--  -->
