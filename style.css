@@ -42,6 +42,7 @@
       }
 
       .container {
+            grid-area: container;
             display: grid;
             grid-template-columns: 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw;
             grid-template-rows: auto;
@@ -54,6 +55,28 @@
             background-color: rgb(200, 200, 200);
             border: 2px rgb(100, 100, 100) solid;
       }
+      .centerArea {
+            text-align: left;
+            float: center;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: white;
+            display: grid;
+            grid-template-columns: 33vw 33vw 33vw;
+            grid-template-rows: auto;
+            grid-template-areas: 
+                  ". title ."
+                  ". title ."
+                  ". buttonArea ."
+                  ". description ."
+                  ". description ."
+                  ". description ."
+                  ". description ."
+                  ". container ."
+                  ". container .";
+      }
+      .buttonArea {
+            grid-area: buttonArea;      
+      }
       .menuButton {
             text-align: center;
             float: center;
@@ -63,8 +86,14 @@
             background-color: darkblue;
       }
       h1 {
+            background-color: lightgray;
+            grid-area: title;
             text-align: center;
             font: TimesNewRoman;
+      }
+      .about {
+            grid-area: description;
+            
       }
       /*.editor div::before { content: counter(line); counter-increment: line; position: absolute; right: calc(100% + 16px); opacity: 0.5; }*/
       .tempButton {
