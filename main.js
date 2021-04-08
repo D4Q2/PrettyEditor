@@ -119,10 +119,10 @@ function compile() {
 }
 
 function setupTemplate() {
-  var request = new XMLHttpRequest();
-  request.open('GET', 'template.txt', false);
-  request.send();
-  var textFileContent = request.responseText; 
+  //var request = new XMLHttpRequest();
+  //request.open('GET', 'template.txt', false);
+  //request.send();
+  //var textFileContent = request.responseText; 
   
   var code = document.querySelector('.editor');
   code.value = "<html><head><title>New</title></head><body>Your stuff here.</body></html>"
