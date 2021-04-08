@@ -100,6 +100,8 @@
             font-size: 30pt;
       }
       .about {
+            font-size: 14pt;
+            margin: 10px;
             grid-area: description;
       }
       /*.editor div::before { content: counter(line); counter-increment: line; position: absolute; right: calc(100% + 16px); opacity: 0.5; }*/
