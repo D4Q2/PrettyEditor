@@ -13,7 +13,7 @@
       <button class="menuButton" onclick="document.location='4PandB.html'">Next Lesson</button>
     </div>
     <div class="about">
-      Another important thing to learn is how to make commments. Comments, in programming, are pieces of information that are in the source code but will not be included in the output. They are often useed to annotate what certain parts of the code are doing, or why certain lines have been included. You can make a comment by typing <!-<interrupt this comment>- before it and --> after it. Everything in between those symbols will not be shown on your webpage. Try running this code:
+      Another important thing to learn is how to make commments. Comments, in programming, are pieces of information that are in the source code but will not be included in the output. They are often useed to annotate what certain parts of the code are doing, or why certain lines have been included. You can make a comment by typing &lt;!-<interrupt this comment>- before it and --&gt; after it. Everything in between those symbols will not be shown on your webpage. Try running this code:
     </div>
     <!-- An editor setup -->
     <div class="editorArea">
@@ -21,18 +21,16 @@
       <div class="container" id="editorZero">
         <!-- Where the user can type code to be run -->
         <div class="editor" contenteditable="true" spellcheck="false">
-          <code>
-          <!DOCTYPE html>
-          <html>
-            <head>
-              
-            </head>
-            <body>
-              This can be seen.
-              <!-- But this cannot -->
-            </body>
-          </html>
-          </code>
+          &lt;!DOCTYPE html&lt;<br>
+          &lt;html&lt;<br>
+            &lt;head&lt;<br>
+              <br>
+            &lt;/head&lt;<br>
+            &lt;body&lt;<br>
+              This can be seen.<br>
+              &lt;!-- But this cannot --&lt;<br>
+            &lt;/body&lt;<br>
+          &lt;/html&lt;
         </div>
         <!-- The button that copies the code to the display part to run it -->
         <button onclick="compile()" class="runButton">Run</button>
