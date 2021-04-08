@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Anchors and Buttons</title>
+    <link rel="stylesheet" href="../style.css">
+  </head>
+
+  <body>
+    <div class="title">
+      <h1>Anyone can Code</h1>
+      <button class="menuButton" onclick="document.location='6Emphasis.html'">Last Lesson</button>
+      <button class="menuButton" onclick="document.location='../index.html'">Home</button>
+      <button class="menuButton" onclick="document.location='8Input.html'">Next Lesson</button>
+    </div>
+    <div class="about">
+      So you want to be able to change pages on your website or let the user navigate to another site? Easy. Simply use the anchor tag pair: <a> and </a>. However, in this case we are going to need to tell the computer that is looking at our website where to go like this: <a href="https://www.mysite.com"></a>. And, just like lots of the other tags, we'll need to put some text in between the anchor tags so that our users can see the link. Check out the example below:
+    </div>
+    <!-- An editor setup -->
+    <div class="editorArea">
+      <!-- The container that manages the positions of the elements -->
+      <div class="container" id="editorZero">
+        <!-- Where the user can type code to be run -->
+        <div class="editor" contenteditable="true" spellcheck="false">
+          &lt;!DOCTYPE html&gt;<br>
+          &lt;html&gt;<br>
+            &lt;head&gt;<br>
+              <br>
+            &lt;/head&gt;<br>
+            &lt;body&gt;<br>
+            &nbsp;&nbsp;&lt;a href="https://www.google.com"&gt;Google Link&lt;/a&gt;
+            &lt;/body&gt;<br>
+          &lt;/html&gt;<br>
+        </div>
+        <!-- The button that copies the code to the display part to run it -->
+        <button onclick="compile()" class="runButton">Run</button>
+        <!-- Resets the code in the editor area to the basic template -->
+        <button onclick="setupTemplate()" class="tempButton">Template</button>
+        <!-- The background of the display area -->
+        <div class="background">
+          <!-- The area where the code output is be displayed -->
+          <iframe id="code"></iframe>
+        </div>
+      </div>
+      <!-- Include the main script that manages syntax highlighting and code output display -->
+      <script src="../main.js"></script>
+    </div>
+  </body>
+</html>
+<!--  -->
