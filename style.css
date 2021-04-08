@@ -54,7 +54,12 @@
             background-color: rgb(200, 200, 200);
             border: 2px rgb(100, 100, 100) solid;
       }
-
+      .menuButton {
+            width: 100px;
+            height: 30px;
+            color: lightgray;
+            background-color: darkblue;
+      }
       /*.editor div::before { content: counter(line); counter-increment: line; position: absolute; right: calc(100% + 16px); opacity: 0.5; }*/
       .tempButton {
         grid-area: tempButton;
