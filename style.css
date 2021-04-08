@@ -1,6 +1,5 @@
       body {
         background-color: lightblue;
-        padding: 0px;
         margin: 0px;
       }
 
@@ -89,11 +88,13 @@
             background-color: lightgray;
             grid-area: title;
             text-align: center;
-            font: TimesNewRoman;
+            font: TimesNewRoman;     
+            margin: 0px;
       }
       .about {
             grid-area: description;
-            
+            margin-left: 33vw;
+            margin-right: 33vw;
       }
       /*.editor div::before { content: counter(line); counter-increment: line; position: absolute; right: calc(100% + 16px); opacity: 0.5; }*/
       .tempButton {
