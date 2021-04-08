@@ -101,7 +101,7 @@
       .tempButton:focus {
         grid-area: tempButton;
         width: 100%;
-        color: lightgray;
+        color: white;
         background-color: orange;
         height: 10%;
         outline: 0 !important;
@@ -110,7 +110,7 @@
       .runButton:focus {
         grid-area: runButton;
         width: 100%;
-        color: lightgray;
+        color: white;
         background-color: orange;
         height: 10%;
         outline: 0 !important;
