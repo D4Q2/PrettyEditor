@@ -90,8 +90,9 @@
             background-color: lightgray;
             grid-area: title;
             text-align: center;
-            font: TimesNewRoman;     
-            margin: -10px;
+            font: TimesNewRoman; 
+            padding: 30px;
+            margin: -30px;
       }
       .about {
             grid-area: description;
