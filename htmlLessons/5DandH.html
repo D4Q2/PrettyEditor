@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Div Tag</title>
+    <link rel="stylesheet" href="../style.css">
+  </head>
+
+  <body>
+    <div class="title">
+      <h1>Anyone can Code</h1>
+      <button class="menuButton" onclick="document.location='4PandB.html'">Last Lesson</button>
+      <button class="menuButton" onclick="document.location='../index.html'">Home</button>
+      <button class="menuButton" onclick="document.location='6LandB.html'">Next Lesson</button>
+    </div>
+    <div class="about">
+      Another useful pair of elements to separate items are the &lt;div&gt; and &lt;/div&gt; tags. These are <i>very</i> commonly used in programming. Also important are the header tags. These are a set of tags that can be used around some text to make it big and header-like, eg &lt;h1&gt;My Header&lt;/h1&gt;. They go all the way from &lt;h1&gt;&lt;/h1&gt; to &lt;h6&gt;&lt;/h6&gt;, with h6 being the smallest. Try it out here:
+    </div>
+    <!-- An editor setup -->
+    <div class="editorArea">
+      <!-- The container that manages the positions of the elements -->
+      <div class="container" id="editorZero">
+        <!-- Where the user can type code to be run -->
+        <div class="editor" contenteditable="true" spellcheck="false">
+          &lt;!DOCTYPE html&gt;<br>
+          &lt;html&gt;<br>
+            &lt;head&gt;<br>
+              <br>
+            &lt;/head&gt;<br>
+            &lt;body&gt;<br>
+            &nbsp;&nbsp;&lt;h1&gt;Big Header or Title&lt;h1&gt;
+            &nbsp;&nbsp;&lt;h2&gt;Smaller Header&lt;h2&gt;
+            &nbsp;&nbsp;&lt;h6&gt;Smallest Header&lt;h6&gt;
+            &nbsp;&nbsp;&lt;div&gt;
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;Words bla bla bla&gt;
+            &nbsp;&nbsp;&lt;/div&gt;
+            &nbsp;&nbsp;&lt;div&gt;
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;More words bla bla bla bla bla&gt;
+            &nbsp;&nbsp;&lt;/div&gt;
+            &lt;/body&gt;<br>
+          &lt;/html&gt;<br>
+        </div>
+        <!-- The button that copies the code to the display part to run it -->
+        <button onclick="compile()" class="runButton">Run</button>
+        <!-- Resets the code in the editor area to the basic template -->
+        <button onclick="setupTemplate()" class="tempButton">Template</button>
+        <!-- The background of the display area -->
+        <div class="background">
+          <!-- The area where the code output is be displayed -->
+          <iframe id="code"></iframe>
+        </div>
+      </div>
+      <!-- Include the main script that manages syntax highlighting and code output display -->
+      <script src="../main.js"></script>
+    </div>
+  </body>
+</html>
+<!--  -->
