@@ -2,10 +2,14 @@
         background-color: lightblue;
         margin: 0px;
       }
+
+
       .topbar {
             background-color: lightgray;
       }
+
       .topbarButton {
+            float: center;
             width: 9vw;
             height: 30px;
             border-radius: 2px;
@@ -21,6 +25,7 @@
       .topbarButton:hover {
             background-color: rgb(4, 72, 72);
       }
+
 
       .editor { 
         grid-area: editor;
@@ -42,6 +47,8 @@
         /*background-color: rgb(200, 200, 200); 
         width: 40vw;/*grid-area: code;*/ 
       }
+
+
       /*.editor div { display: block; position: relative; white-space: pre-wrap; color: darkgray;  }*/
       iframe { 
         /*float: top;*/
@@ -153,53 +160,39 @@
         height: 10%;
       }
       .tempButton:hover {
-        grid-area: tempButton;
-        width: 100%;
         color: lightgray;
         background-color: darkorange;
-        height: 10%;
       }
       .runButton:hover {
-        grid-area: runButton;
-        width: 100%;
         color: lightgray;
         background-color: darkorange;
-        height: 10%;
       }
       .tempButton:active {
-        grid-area: tempButton;
-        width: 100%;
         color: darkgray;
         background-color: rgb(200, 75, 0);
-        height: 10%;
       }
       .runButton:active {
-        grid-area: runButton;
-        width: 100%;
         color: darkgray;
         background-color: rgb(200, 75, 0);
-        height: 10%;
       }
       .tempButton:focus {
-        grid-area: tempButton;
-        width: 100%;
         color: white;
         background-color: orange;
-        height: 10%;
         outline: 0 !important;
         border: 3px black solid;
       }
       .runButton:focus {
-        grid-area: runButton;
-        width: 100%;
         color: white;
         background-color: orange;
-        height: 10%;
         outline: 0 !important;
         border: 3px black solid;
       }
+
       basewords { 
         color: purple; 
+      }
+      cssTerms {
+            color: gold;
       }
       comment { 
         color: gray; 
