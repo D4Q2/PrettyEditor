@@ -6,15 +6,18 @@
             background-color: lightgray;
       }
       .topbarButton {
-            float: center;
-            background-color: black;
+            width: 10vw;
+            height: 30px;
+            border-radius: 2px;
+            border: 2px solid rgb(4, 72, 72);
+            background-color: rgba(7, 119, 119, 0); /* transparent */
             color: white;
             text-align: center;
             margin: 0px;
             padding: 0px;
       }
       .topBarButton:hover {
-            background-color: darkgray;
+            background-color: rgb(4, 72, 72);
       }
 
       .editor { 
