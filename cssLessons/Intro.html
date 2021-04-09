@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Intro to CSS</title>
+    <link rel="icon" href="../Files/Logo.jpeg">
+    <link rel="stylesheet" href="../style.css">
+  </head>
+
+  <body>
+    <div class="topbar">
+      <button class="thisPageButton" onclick="document.location='1Intro.html'"><buttonNumber>1 </buttonNumber><buttonText>Intro</buttonText></button>
+      <button class="topbarButton" onclick="document.location='2HeadBody.html'"><buttonNumber>2 </buttonNumber><buttonText>Head and Body</buttonText></button>
+      <button class="topbarButton" onclick="document.location='3Comments.html'"><buttonNumber>3 </buttonNumber><buttonText>Comments</buttonText></button>
+      <button class="topbarButton" onclick="document.location='4PandB.html'"><buttonNumber>4 </buttonNumber><buttonText>Formatting</buttonText></button>
+      <button class="topbarButton" onclick="document.location='5DandH.html'"><buttonNumber>5 </buttonNumber><buttonText>Div and Header</buttonText></button>
+      <button class="topbarButton" onclick="document.location='6Emphasis.html'"><buttonNumber>6 </buttonNumber><buttonText>Modify Text</buttonText></button>
+      <button class="topbarButton" onclick="document.location='7Links.html'"><buttonNumber>7 </buttonNumber><buttonText>Links</buttonText></button>
+      <button class="topbarButton" onclick="document.location='8Input.html'"><buttonNumber>8 </buttonNumber><buttonText>Input</buttonText></button>
+      <button class="topbarButton" onclick="document.location='9Embed.html'"><buttonNumber>9 </buttonNumber><buttonText>Embedding</buttonText></button>
+      <button class="topbarButton" onclick="document.location='10SandS.html'"><buttonNumber>10 </buttonNumber><buttonText>Add JS and CSS</buttonText></button>
+    </div>
+    <div class="title">
+      <h1>Anyone can Code</h1>
+      <button class="menuButton" onclick="document.location='../index.html'">Home</button>
+      <button class="menuButton" onclick="document.location='2HeadBody.html'">Next Lesson</button>
+    </div>
+    <div class="about">
+      CSS stands for Cascading Style Sheets. It is made to add, well, style. Colors, fonts, sizes, and much more. In this lesson, we will use change the text alignment of some text. There are three places to write css. The first is to put it right in with the tag it is going to affect, like this: &lt;div style="text-align: center;"&gt;&lt;/div&gt;. Your css would go in the style attribute of a tag. This does not have to be a div tag, it works with almost all tags. So do the other methods. Another method is to put it in another file, but it while this is generally the best method long-term, the last method is good for prototyping and what we are doing. The last method, which is to put the css information inside of style tags: &lt;style&gt;&lt;/style&gt;, and then connect use classes to make it work with our content. For this, we can either connect it to a specific tag such as body or div like this &lt;style&gt; body { text-align: center; } &lt;/style&gt; or we or we can use the class attribute of an html tag like this: &lt;style&gt; .area { text-align: center; } &lt;/style&gt; and later on we can do: &lt;div class="area"&gt;&lt;/div&gt; or &lt;p class="area"&gt;&lt;/p&gt;. Remember, we put the dot in front of the name when we use the class attribute in the tags, and we don't when we are using a tag. Have a look at this example:
+    </div>
+    <!-- An editor setup -->
+    <div class="editorArea">
+      <!-- The container that manages the positions of the elements -->
+      <div class="container" id="editorZero">
+        <!-- Where the user can type code to be run -->
+        <div class="editor" contenteditable="true" spellcheck="false">
+          &lt;!DOCTYPE html&gt;<br>
+          &lt;html&gt;<br>
+            &nbsp;&nbsp;&lt;head&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;style&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h1 {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.main {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-align: left;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/style&gt;<br>
+            &nbsp;&nbsp;&lt;/head&gt;<br>
+            &nbsp;&nbsp;&lt;body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1>Title</h1&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="main"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lots of words and words and more words.<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+            &nbsp;&nbsp;&lt;/body&gt;<br>
+          &lt;/html&gt;
+        </div>
+        <!-- The button that copies the code to the display part to run it -->
+        <button onclick="compile()" class="runButton">Run</button>
+        <!-- The background of the display area -->
+        <div class="background">
+          <!-- The area where the code output is be displayed -->
+          <iframe id="code"></iframe>
+        </div>
+      </div>
+      <!-- Include the main script that manages syntax highlighting and code output display -->
+      <script src="../main.js"></script>
+    </div>
+  </body>
+</html>
+<!--  -->
