@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Embedding</title>
+    <link rel="icon" href="../Icon.jpeg">
+    <link rel="stylesheet" href="../style.css">
+  </head>
+
+  <body>
+    <div class="topbar">
+      <button class="topbarButton" onclick="document.location='1Intro.html'"><buttonNumber>1 </buttonNumber><buttonText>Intro</buttonText></button>
+      <button class="topbarButton" onclick="document.location='2HeadBody.html'"><buttonNumber>2 </buttonNumber><buttonText>Head and Body</buttonText></button>
+      <button class="topbarButton" onclick="document.location='3Comments.html'"><buttonNumber>3 </buttonNumber><buttonText>Comments</buttonText></button>
+      <button class="topbarButton" onclick="document.location='4PandB.html'"><buttonNumber>4 </buttonNumber><buttonText>Formatting</buttonText></button>
+      <button class="topbarButton" onclick="document.location='5DandH.html'"><buttonNumber>5 </buttonNumber><buttonText>Div and Header</buttonText></button>
+      <button class="topbarButton" onclick="document.location='6Emphasis.html'"><buttonNumber>6 </buttonNumber><buttonText>Modify Text</buttonText></button>
+      <button class="topbarButton" onclick="document.location='7Links.html'"><buttonNumber>7 </buttonNumber><buttonText>Links</buttonText></button>
+      <button class="topbarButton" onclick="document.location='8Input.html'"><buttonNumber>8 </buttonNumber><buttonText>Input</buttonText></button>
+      <button class="topbarButton" onclick="document.location='9Embed.html'"><buttonNumber>9 </buttonNumber><buttonText>Embedding</buttonText></button>
+      <button class="thisPageButton" onclick="document.location='10SandS.html'"><buttonNumber>10 </buttonNumber><buttonText>Add JS and CSS</buttonText></button>
+    </div>
+    <div class="title">
+      <h1>Anyone can Code</h1>
+      <button class="menuButton" onclick="document.location='8Input.html'">Last Lesson</button>
+      <button class="menuButton" onclick="document.location='../index.html'">Home</button>
+      <button class="menuButton" onclick="document.location='10SandS.html'">Next Lesson</button>
+    </div>
+    <div class="about">
+      That's all of the main html tags save two, which I am about to show you. It may not seem like it, but you have already made huge headway into the world of web development. You can already assemble a basic website. Now you just need some CSS (to make it look nicer) and JavaScript (to add more movement and functionality) to make your own high-quality website. To use CSS in a webpage you need to put it (usually in the head) inside of &lt;style&gt; and &lt;/style&gt;. To use JavaScript, you need to put it between &lt;script&gt; and &lt;/script&gt; tags in either the head or the body.
+    </div>
+    <!-- An editor setup -->
+    <div class="editorArea">
+      <!-- The container that manages the positions of the elements -->
+      <div class="container" id="editorZero">
+        <!-- Where the user can type code to be run -->
+        <div class="editor" contenteditable="true" spellcheck="false">
+          &lt;!DOCTYPE html&gt;<br>
+          &lt;html&gt;<br>
+            &lt;head&gt;<br>
+            &nbsp;&nbsp;&lt;style&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<br>
+            &nbsp;&nbsp;&lt;/style&gt;<br>
+            &nbsp;&nbsp;&lt;script&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<br>
+            &nbsp;&nbsp;&lt;/script&gt;<br>
+            &lt;/head&gt;<br>
+            &lt;body&gt;<br>
+            &nbsp;&nbsp;
+            &lt;/body&gt;<br>
+          &lt;/html&gt;<br>
+        </div>
+        <!-- The button that copies the code to the display part to run it -->
+        <button onclick="compile()" class="runButton">Run</button>
+        <!-- The background of the display area -->
+        <div class="background">
+          <!-- The area where the code output is be displayed -->
+          <iframe id="code"></iframe>
+        </div>
+      </div>
+      <!-- Include the main script that manages syntax highlighting and code output display -->
+      <script src="../main.js"></script>
+    </div>
+  </body>
+</html>
+<!--  -->
