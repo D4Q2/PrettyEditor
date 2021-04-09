@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Links</title>
+    <title>Embedding</title>
     <link rel="stylesheet" href="../style.css">
   </head>
 
@@ -20,12 +20,12 @@
     </div>
     <div class="title">
       <h1>Anyone can Code</h1>
-      <button class="menuButton" onclick="document.location='7Links.html'">Last Lesson</button>
+      <button class="menuButton" onclick="document.location='8Input.html'">Last Lesson</button>
       <button class="menuButton" onclick="document.location='../index.html'">Home</button>
-      <button class="menuButton" onclick="document.location='9Embed.html'">Next Lesson</button>
+      <button class="menuButton" onclick="document.location='10SandS.html'">Next Lesson</button>
     </div>
     <div class="about">
-      It's time to move beyond text and inlcude images and videos! This is actually not very hard at all. For an image, all you need to do is use the src (short for source) attribute of the img (short for image) tag like this: &lt;img src="https://somesite.com/image.png"/&gt;. This is another one where you should just put a slash before the closing angle bracket. Videos are very similar to do.
+      It's time to move beyond text and inlcude images and videos! This is actually not very hard at all. For an image, all you need to do is use the src (short for source) attribute of the img (short for image) tag like this: &lt;img src="https://somesite.com/image.png"/&gt;. You can also specify height, width, a frameborder, and some text for if the image fails to load like this: height="100". This is another one where you should just put a slash before the closing angle bracket. Also, it doesn't have to be a png. The img tag supports most image formats. Videos are very similar to do, and the way you embed a video is the same way you can actually embed someone else's site into your own. For this you can use the &lt;iframe&gt; and &lt;/iframe&gt; tags. Again you will need to use the src attribute, and you can still specify the size of the iframe using height and width attributes. Take a look at this example:
     </div>
     <!-- An editor setup -->
     <div class="editorArea">
@@ -39,8 +39,8 @@
               <br>
             &lt;/head&gt;<br>
             &lt;body&gt;<br>
-            &nbsp;&nbsp;&lt;img src="" alt="My image alt"/&gt;
-            &nbsp;&nbsp;&lt;video src="" alt="My video alt"/&gt;
+            &nbsp;&nbsp;&lt;img src="https://www.pexels.com/photo/turned-on-computer-monitor-displaying-text-270360/" alt="Monitor displaying code" height="100" width="200" frameborder="1"/&gt;
+            &nbsp;&nbsp;&lt;iframe src="https://www.youtube.com/watch?v=LBSwweZj4ok" alt="Video of Someone Typing" height="100" width="200" frameborder="2"&gt;&lt;/iframe&gt;
             &lt;/body&gt;<br>
           &lt;/html&gt;<br>
         </div>
