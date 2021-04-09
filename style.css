@@ -5,18 +5,18 @@
       .topbar {
             background-color: lightgray;
       }
-      .topbarButton {
-            width: 10vw;
+      .topbarButton, .topBarButton:focus {
+            width: 9vw;
             height: 30px;
             border-radius: 2px;
             border: 2px solid rgb(4, 72, 72);
             background-color: rgba(7, 119, 119, 0); /* transparent */
             color: white;
             text-align: center;
-            margin: 0px;
-            padding: 0px;
+            margin: 0%;
+            padding: 0%;
       }
-      .topBarButton:hover {
+      .topbarButton:hover {
             background-color: rgb(4, 72, 72);
       }
 
@@ -63,12 +63,12 @@
       .container {
             grid-area: container;
             display: grid;
-            grid-template-columns: 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw;
+            grid-template-columns: 11vw 11vw 11vw 11vw 11vw 11vw 11vw 11vw 11vw;
             grid-template-rows: auto;
             grid-template-areas: 
-                  "editor editor editor editor tempButton runButton display display display display"
-                  "editor editor editor editor tempButton runButton display display display display"
-                  "editor editor editor editor tempButton runButton display display display display";
+                  "editor editor editor editor runButton display display display display"
+                  "editor editor editor editor runButton display display display display"
+                  "editor editor editor editor runButton display display display display";
             margin: 0px;
       }
       .editorArea {
