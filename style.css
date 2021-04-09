@@ -24,13 +24,6 @@
             background-color: rgb(4, 72, 72);
       }
 
-      buttonNumber {
-                  display: none;
-      }
-      buttonText {
-            display: normal;
-      }
-
       @media only screen and (min-width: 1350px) {
             buttonNumber {
                   display: none;
