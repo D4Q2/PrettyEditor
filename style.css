@@ -70,8 +70,8 @@
       }
       .editorArea {
             height: 50vh;
-            width: 100vw;
-            padding: 5px;
+            width: 100%;
+            padding: 1px;
             background-color: rgb(200, 200, 200);
             border: 2px rgb(100, 100, 100) solid;
       }
@@ -94,6 +94,8 @@
                   ". container .";
       }
       .buttonArea {
+            padding: 0px;
+            margin: 0px;
             grid-area: buttonArea;      
       }
       .menuButton {
@@ -103,6 +105,7 @@
             height: 30px;
             color: lightgray;
             background-color: darkblue;
+            margin: 0px;
       }
       .title {
             background-color: lightgray;
