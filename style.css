@@ -8,6 +8,11 @@
             background-color: lightgray;
       }
 
+      thisPageButton {
+            border: 2px solid black !important;
+            background: black !important;
+      }
+
       .topbarButton {
             float: center;
             width: 9vw;
