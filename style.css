@@ -13,7 +13,7 @@
             background-color: rgba(0, 0, 0, 0); /* transparent */
             color: white;
             text-align: center;
-            margin: -0.0000000001%;
+            margin: -0.01%;
             padding: 0%;
       }
       .topbarButton:hover {
