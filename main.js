@@ -8,7 +8,7 @@
           else {
             var s = node.innerText
             // remember to remove all of these tags below when writing to the iframe
-            .replace(/(\/\/.*)/g, '<comment>$1</comment>') 
+            //.replace(/(\/\/.*)/g, '<comment>$1</comment>') 
             .replace(
                /\b(new|if|else|do|while|switch|for|in|continue|break|return|typeof|function|var|const|let|\.length)(?=[^\w])/g,
               '<basewords>$1</basewords>',
@@ -18,8 +18,8 @@
             .replace(/(".*?"|'.*?'|`.*?`)/g, '<inquotes>$1</inquotes>');
             //.replace(/\b(a|b|c|d|f|e|g|h|i|j|k|l|m|n|o|p|q|s|t|u|v|w|x|y|z)/g, '<text>$1</text>')
            
-            s = s.replaceAll('/*','<comment>/*');
-            s = s.replaceAll('*/','*/</comment>');
+            s = s.replaceAll('<!--','<comment><!--');
+            s = s.replaceAll('-->','--></comment>');
                 
           node.innerHTML = s.replaceAll('\n','<br/>');
           //node.innerHTML = s.split('\n').join('<br/>'); 
