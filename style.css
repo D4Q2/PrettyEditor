@@ -202,45 +202,24 @@
             grid-area: description;
       }
       /*.editor div::before { content: counter(line); counter-increment: line; position: absolute; right: calc(100% + 16px); opacity: 0.5; }*/
-      .tempButton {
-        grid-area: tempButton;
-        width: 100%;
-        color: white;
-        background-color: orange;
-        height: 10%;
-      }
       .runButton {
         grid-area: runButton;
         width: 100%;
         color: white;
-        background-color: rgb();
+        background-color: rgb(30, 200, 30);
         height: 10%;
-      }
-      .tempButton:hover {
-        color: lightgray;
-        background-color: darkorange;
       }
       .runButton:hover {
         color: lightgray;
-        background-color: darkorange;
-      }
-      .tempButton:active {
-        color: darkgray;
-        background-color: rgb(200, 75, 0);
+        background-color: rgb(15, 150, 15);
       }
       .runButton:active {
         color: darkgray;
-        background-color: rgb(200, 75, 0);
-      }
-      .tempButton:focus {
-        color: white;
-        background-color: orange;
-        outline: 0 !important;
-        border: 3px black solid;
+        background-color: rgb(10, 100, 10);
       }
       .runButton:focus {
         color: white;
-        background-color: orange;
+        background-color: rgb(30, 200, 30);
         outline: 0 !important;
         border: 3px black solid;
       }
