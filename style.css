@@ -31,12 +31,49 @@
             display: normal;
       }
 
-      @media only screen and (max-width: 1160px) {
+      @media only screen and (min-width: 1350px) {
+            buttonNumber {
+                  display: none;
+            }
+            buttonText {
+                  display: normal;
+            }
+            .topbarButton {
+                  width: 9vw;
+            }
+       }
+      
+      @media only screen and (max-width: 1350px) {
             buttonNumber {
                   display: normal;
             }
             buttonText {
                   display: none;
+            }
+            .topbarButton {
+                  width: 8.5vw;
+            }
+       }
+      @media only screen and (max-width: 1200px) {
+            buttonNumber {
+                  display: normal;
+            }
+            buttonText {
+                  display: none;
+            }
+            .topbarButton {
+                  width: 8.5vw;
+            }
+       }
+       @media only screen and (max-width: 570px) {
+            buttonNumber {
+                  display: normal;
+            }
+            buttonText {
+                  display: none;
+            }
+            .topbarButton {
+                  width: 8vw;
             }
        }
 
