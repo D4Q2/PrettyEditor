@@ -93,7 +93,7 @@
       el.focus();
       editor(el);
 
-//function compile() {
+function compile() {
    var code = document.getElementsByClassName("editor");
    var trimmed = code[0].innerText.replaceAll("<div>", "");
    var trimmed = trimmed.replaceAll("</div>", "");
@@ -118,8 +118,8 @@
    output.open();
    output.write( trimmed );
    output.close();
-//}
-
+}
+compile();
 function setupTemplate() {
   //var request = new XMLHttpRequest();
   //request.open('GET', 'template.txt', false);
