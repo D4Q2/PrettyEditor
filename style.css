@@ -8,9 +8,17 @@
             background-color: lightgray;
       }
 
-      thisPageButton {
-            border: 2px solid black !important;
-            background: black !important;
+      .thisPageButton {
+            float: center;
+            width: 9vw;
+            height: 30px;
+            border-radius: 2px;
+            border: 2px solid rgb(2, 30, 30);
+            background-color: rgb(2, 30, 30);
+            color: white;
+            text-align: center;
+            margin: 0.344%;
+            padding: 0%;
       }
 
       .topbarButton {
