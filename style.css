@@ -6,7 +6,7 @@
             background-color: lightgray;
       }
       .topbarButton {
-            width: 10vw;
+            width: 9vw;
             height: 30px;
             border-radius: 2px;
             border: 2px solid rgb(4, 72, 72);
@@ -14,8 +14,8 @@
             color: white;
             text-align: center;
             margin: 5px;
-            margin-left: -0.14%;
-            margin-right: -0.14%;
+            margin-left: -0.64vw;
+            margin-right: -0.64vw;
             padding: 0%;
       }
       .topbarButton:hover {
