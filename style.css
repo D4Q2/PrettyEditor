@@ -6,6 +6,7 @@
             background-color: lightgray;
       }
       .topbarButton {
+            float: center;
             background-color: black;
             color: white;
             text-align: center;
