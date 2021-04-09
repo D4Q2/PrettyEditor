@@ -13,6 +13,10 @@
                /\b(new|if|else|do|while|switch|for|in|continue|break|return|typeof|function|var|const|let|\.length)(?=[^\w])/g,
               '<basewords>$1</basewords>',
             )
+            .replace(
+               /\b(body|div|p|span|button)/g,
+              '<cssTerms>$1</cssTerms>',
+            )
             .replace(/\b(\d+)/g, '<number>$1</number>')
             .replace(/\b(float|int|string|bool)/g, '<datatype>$1</datatype>')
             .replace(/(".*?"|'.*?'|`.*?`)/g, '<inquotes>$1</inquotes>');
@@ -109,6 +113,8 @@ function compile() {
    var trimmed = trimmed.replaceAll("</datatype>", ""); 
    var trimmed = trimmed.replaceAll("<inquotes>", "");
    var trimmed = trimmed.replaceAll("</inquotes>", "");  
+   var trimmed = trimmed.replaceAll("<cssTerms>", "");
+   var trimmed = trimmed.replaceAll("</cssTerms>", ""); 
    var trimmed = trimmed.replaceAll("<br>", "");
    var trimmed = trimmed.replaceAll("&nbsp;", "");
    var trimmed = trimmed.replaceAll("&lt;", "<");
