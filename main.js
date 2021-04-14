@@ -116,7 +116,8 @@ function compile() {
    var trimmed = trimmed.replaceAll("<cssTerms>", "");
    var trimmed = trimmed.replaceAll("</cssTerms>", ""); 
    var trimmed = trimmed.replaceAll("<br>", "");
-   var trimmed = trimmed.replaceAll("&nbsp;", "");
+   var trimmed = trimmed.replaceAll(" ", "");
+   var trimmed = trimmed.replaceAll("&gt;", ">");
    var trimmed = trimmed.replaceAll("&lt;", "<");
    var trimmed = trimmed.replaceAll("&gt;", ">");
   
